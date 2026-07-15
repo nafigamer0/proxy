@@ -1,8 +1,7 @@
 FROM ginuerzh/gost:latest
 
 EXPOSE 8080
-EXPOSE 1080
 
 ENTRYPOINT []
 
-CMD sh -c "gost -L=wss://sudo:sudo@0.0.0.0:1080 -D"
+CMD sh -c "gost -L=wss://sudo:sudo@0.0.0.0:8080 -D"
