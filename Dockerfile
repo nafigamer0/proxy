@@ -4,4 +4,4 @@ FROM ginuerzh/gost:latest
 EXPOSE 8080
 
 # Run gost as a WebSocket (ws) proxy with authentication
-CMD ["-L=ws://sudo:sudo@:8080"]
+CMD sh -c "gost -L=ws://sudo:sudo@0.0.0.0:$PORT"
