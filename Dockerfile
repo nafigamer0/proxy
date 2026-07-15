@@ -5,4 +5,4 @@ EXPOSE 1080
 
 ENTRYPOINT []
 
-CMD sh -c "gost -L=ws://0.0.0.0:1080?auth=sudo:sudo -F=direct:// -D"
+CMD sh -c "gost -L=ws://sudo:sudo@0.0.0.0:$PORT -F=direct:// -D"
